@@ -14,11 +14,11 @@ type address struct {
 }
 
 type person struct {
-	ID          int       `json:"id"`
-	AdultBool   bool      `json:"adult"`
-	Age         *int      `json:"age,omitempty"`
-	Name        string    `json:"name"`
-	FullName    string    `json:"Name"`
+	ID        int    `json:"id"`
+	AdultBool bool   `json:"adult"`
+	Age       *int   `json:"age,omitempty"`
+	Name      string `json:"name"`
+	// FullName        string    `json:"Name"`
 	NickName    *string   `json:"nick name"`
 	Address     address   `json:"address"`
 	FriendsList []*person `json:"friends"`
