@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "adult": true,
+    "name": "test subject",
+    "age": null,
+    "verwrongkey": {},
+    "nick name": "testi",
+    "address": {
+      "street": "vorderlinde 89",
+      "country": "gesternland",
+      "postal code": 99811
+    },
+    "friends": []
+  },
+  {
+    "id": 2,
+    "adult": false,
+    "age": 8,
+    "name": "test subject 2",
+    "nick name": "testii",
+    "address": {
+      "street": "vorderlinde 89",
+      "country": "gesternland",
+      "postal code": 99811
+    },
+    "friends": []
+  }
+]

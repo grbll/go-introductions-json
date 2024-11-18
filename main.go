@@ -3,6 +3,7 @@ package main
 import (
 	"encoding/json"
 	"fmt"
+	"os"
 	"time"
 )
 
@@ -62,4 +63,25 @@ func main() {
 		return
 	}
 	fmt.Printf("%s\n", jsonPerson2)
+
+	jsonFile, err := os.ReadFile("./persons.json")
+
+	if err != nil {
+		fmt.Printf("Error while opening File:%s\n", err)
+		return
+	}
+
+	fmt.Printf("%s\n", jsonFile)
+
+	var PersonList []person
+
+	err = json.Unmarshal(jsonFile, &PersonList)
+
+	if err != nil {
+		fmt.Printf("Error while unmarshalling file string:%s\n", err)
+		return
+	}
+
+	fmt.Printf("%+v\n", PersonList)
+	fmt.Printf("%v\n", *PersonList[0].Age)
 }
