@@ -3,6 +3,7 @@
     "id": 1,
     "adult": true,
     "name": "test subject",
+    "Name": "toast subject",
     "age": null,
     "verwrongkey": {},
     "nick name": "testi",

@@ -18,6 +18,7 @@ type person struct {
 	AdultBool   bool      `json:"adult"`
 	Age         *int      `json:"age,omitempty"`
 	Name        string    `json:"name"`
+	FullName    string    `json:"Name"`
 	NickName    *string   `json:"nick name"`
 	Address     address   `json:"address"`
 	FriendsList []*person `json:"friends"`
@@ -83,5 +84,5 @@ func main() {
 	}
 
 	fmt.Printf("%+v\n", PersonList)
-	fmt.Printf("%v\n", *PersonList[0].Age)
+	fmt.Printf("%v\n", *PersonList[1].Age)
 }
